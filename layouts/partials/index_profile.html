@@ -56,3 +56,6 @@
     </div>
     {{- end}}
 </div>
+{{ if not hugo.IsProduction }}
+    {{- partial "debug/debug.html" (dict "context" . "template" "layouts/partials/index_profile.html") -}} 
+{{ end }}

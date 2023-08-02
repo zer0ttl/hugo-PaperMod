@@ -55,4 +55,9 @@
   {{- end }}
 </article>
 
+{{ if not hugo.IsProduction }}
+  {{- partial "debug/debug.html" (dict "context" . "template" "layouts/_default/single.html") -}}
+  {{- partial "console" $ }}
+{{ end }}
+
 {{- end }}{{/* end main */}}
