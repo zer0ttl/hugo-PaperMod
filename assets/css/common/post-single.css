@@ -307,6 +307,8 @@
 
 .post-tags li {
     display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .post-tags a,
