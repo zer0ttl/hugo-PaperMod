@@ -18,7 +18,7 @@
     {{- if $tags }}
     <ul class="post-tags">
       {{- range ($.GetTerms $tags) }}
-      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle | lower }}</a></li>
       {{- end }}
     {{- end }}
     </ul>
